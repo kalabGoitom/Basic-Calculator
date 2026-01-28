@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen-container">
+        <input id="screen" type="text" disabled />
+      </div>
+      <div class="btn-container">
+        <div class="column column-1">
+          <input onclick="del()" type="button" value="del" />
+          <input onclick="appendToScreen(7)" type="button" value="7" />
+          <input onclick="appendToScreen(4)" type="button" value="4" />
+          <input onclick="appendToScreen(1)" type="button" value="1" />
+          <input onclick="clearScreen()" type="button" value="c" />
+        </div>
+
+        <div class="column column-2">
+          <input onclick="appendToScreen('(')" type="button" value="(" />
+          <input onclick="appendToScreen(8)" type="button" value="8" />
+          <input onclick="appendToScreen(5)" type="button" value="5" />
+          <input onclick="appendToScreen(2)" type="button" value="2" />
+          <input onclick="appendToScreen(0)" type="button" value="0" />
+        </div>
+
+        <div class="column column-3">
+          <input onclick="appendToScreen(')')" type="button" value=")" />
+          <input onclick="appendToScreen(9)" type="button" value="9" />
+          <input onclick="appendToScreen(6)" type="button" value="6" />
+          <input onclick="appendToScreen(3)" type="button" value="3" />
+          <input onclick="appendToScreen('.')" type="button" value="." />
+        </div>
+
+        <div class="column column-4">
+          <input onclick="appendToScreen('/')" type="button" value="/" />
+          <input onclick="appendToScreen('*')" type="button" value="*" />
+          <input onclick="appendToScreen('-')" type="button" value="-" />
+          <input onclick="appendToScreen('+')" type="button" value="+" />
+          <input onclick="calc()" type="button" value="=" />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

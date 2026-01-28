@@ -1,0 +1,92 @@
+:root {
+  --main-color: rgb(7, 7, 7);
+  --accent-bg: rgb(24, 24, 24);
+  --accent2-bg: rgb(61, 59, 59);
+  -green: rgb(0, 118, 0);
+  --grey: rgba(106, 106, 106, 0.604);
+  --text-color1: white;
+  --text-color2: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: var(--main-color);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.screen-container {
+  width: 90%;
+  border: 1px solid var(--grey);
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.screen-container input[type="text"] {
+  color: var(--text-color1);
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.column input[type="button"] {
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 50px;
+  aspect-ratio: 1/1;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-bg);
+  color: var(--text-color1);
+  border: none;
+}
+
+.column input[type="button"]:first-child {
+  background-color: var(--accent2-bg);
+}
+
+.column-4 input[type="button"] {
+  background-color: var(--grey) !important;
+}
+
+.column-4 input[type="button"]:last-child {
+  background-color: green !important;
+}
